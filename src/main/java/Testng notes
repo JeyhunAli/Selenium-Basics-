@@ -1,0 +1,79 @@
+TestNG is new generation framework ---> its a unit testing framework 
+its very famous frame work which is used by developer to write their test cases.--> unit level test cases .
+whenever they write their codes they writing thier unit level test cases also by using JUnit or by TestNG. SO both are testing framework 
+But Automation Engineer also they can use testNG and they can integrate with selenium and they can write very good test cases also its very powerful 
+tool its giving a lot of options to write and designig your test cases and generate very good HTML report 
+the purpose of testNG is design in a systematic way test cases 
+TestNG is open source is free availabele in market you can download it 
+its available in a form of jar file
+its also calls java unit testing framework 
+jUnit and testNG both are available to use only in java  lets say for the future u want to write soome test cases in different tool for example 
+php, dotnet, csharp, nUnit for these language we cannot use testng or junit. for them theres different tool
+advantages of testNG . is free opensource , it provide very goood HTML report , a lot of annotations, priorites of the test cases which one to execute 
+first which one after 
+dependency is there 
+grouping also possible lets say u have hundred test cases u can group some of them 
+most important feature is data provider advantages. lets say u want to execute your test cases multiple time with diffrent set of data 
+lest say u have login test cases and u can execute it multiple time with different set of data 
+data provider is very important for any kind of the test cases which is executing testng and selenium 
+testNg is also calls TDD frame work ----> test driven development 
+what does it mean? along with the codes test cases framework we can also design our test cases in Agile methodology
+http://beust.com/eclipse/ ----> this is the url to download testng to your eclipse   
+another note for testNG whenever u are creatig class for testng for that no need to select main method 
+***************************************************************************************************************************************
+in testng lets say we have 50or 100 test cases if i want to run all them together we can do it for that 
+in testNg We can run all test cases in one time for that in config folder we create testng.xml file 
+under that file we copy and paste particular path then we write pacgake and class name all in there (see the example in testng.xml file )
+
+example of testng.xml file   note: if you want to run all the test cases you have to use this consept 
+
+we can give any name in our testng.xml file to suite or to test name 
+**************************************************************************************************************************************
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >  
+<suite name="TestNG Test Automation Suite" >
+
+ <test name="Different TestNG Feature test" >
+    <classes>
+        <class name="tutorialsTestNG.AassertationTestng" >
+     <class name= "tutorialsTestNG.ExceptiontimeOut" >
+     <class name= "tutorialsTestNG.GoogleTestNG" >
+     <class name= "tutorialsTestNG.Invovationcounttestng" >
+     <class name= "tutorialsTestNG.Testngconsept" >
+     <class name= "tutorialsTestNG.TestngFeatures" >
+  
+    
+    </classes>
+  
+  </test>
+ 
+</suite>
+*********************************************************************************************************************
+
+
+we are defining our testng.xml file parameter by parameter keyword  example:     <parameter name = "url" values = https://login.yahoo.com/"/>
+whatever we are defining in testng.xml file as paramater they are called parameter environment and those parameter environment will be 
+common for every classes 
+those environment can be used each and every related test cases classes 
+in testng.xml file we can also define browser
+whatever parameters will be in testng.xml file all they are also calls environment variables 
+not our test data   
+
+in testng lets say we have multiple test cases and some of them we dont want to execute for that in fornt of @test(enabled=false) we have to write 
+then that particiular test cases wont execute 
+so lets say later on u want to execute that test which u enabled false then enabled = true then it will execute 
+
+one more about testNG.xml file so if you notice that in that file theres a verbose 
+what is the verbose=1,verbose=2   so verbose it gives us all the report on the console if verbose=1 theres less information about executed test case
+if verbose=2,3,5 up to 10 it means theres more information about that particular executed test case
+
+************************************************************************************************************************
+
+TDD test driven development  in testNG we can achive data driven test framework by getting data from testn.xml file 
+or we can get from excel sheet or we can get some property files or json file 
+in excel file we store all the test data 
+in testng.xml file we store all the environment configuration variables 
+in property files we can store both test data and env variables 
+
+
+
+
