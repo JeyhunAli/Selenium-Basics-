@@ -11,7 +11,7 @@ jUnit and testNG both are available to use only in java  lets say for the future
 php, dotnet, csharp, nUnit for these language we cannot use testng or junit. for them theres different tool
 advantages of testNG . is free opensource , it provide very goood HTML report , a lot of annotations, priorites of the test cases which one to execute 
 first which one after 
-dependency is there 
+dependency is there i mean depend on method 
 grouping also possible lets say u have hundred test cases u can group some of them 
 most important feature is data provider advantages. lets say u want to execute your test cases multiple time with diffrent set of data 
 lest say u have login test cases and u can execute it multiple time with different set of data 
@@ -73,6 +73,57 @@ or we can get from excel sheet or we can get some property files or json file
 in excel file we store all the test data 
 in testng.xml file we store all the environment configuration variables 
 in property files we can store both test data and env variables 
+
+
+***********************************************https://github.com/JeyhunAli/Selenium-Basics-.git********************************************
+
+in testNG framework its good to avoid to validate test cases with if else condition why let me explain why 
+when we are validating test cases with if else condition its gonna print on the concole only about failing test cases but its not gonna fail the actual test case 
+but if i will validate my test cases by assert class which is provide by testNG then it will fail if something wrong or it will pass
+
+in testNG as we now there some more annotations ---- >>>>  there are two types of the wrting test cases we can start our test cases first with 
+@BeforeMethod @AfterMethod 
+@beforeTest @AfterTest 
+diffreneces between them if i will write my test cases with @beforemethod every time for every test cases my browser will launch evertime and then it will execute me test cases 
+but with before test annotations it will execute all the cases with one browser and its not  recomended why because 
+lets say i have 50 0r 100 or more than hundred test cases for each and every test cases only one browser its not good idea because browser in somehow can get crash because of interenet 
+issue or because of the test script can affect it then rest of the test cases will skip then will mark as a failure test cases 
+but with the before method and after method annotations it will all the time execute with fresh browser 
+
+but before test and after test annotations we can use mostly for smoke and sanity test cases because they 
+are small and fast executable test cases for them its enaugh to have only one browser 
+its always good practice while providing test cases with the annotations to provide with custom messages its giving more visible like log to where exactly wrong 
+
+when ever we are using soft assert we have to create object of it then we can use 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
